@@ -1,0 +1,28 @@
+// list
+
+.#{$prefix}list-horizontal {
+  margin: 0;
+  padding: 0;
+}
+
+.#{$prefix}list-horizontal > a {
+  display: inline-block;
+}
+
+.#{$prefix}list-horizontal > li {
+  display: inline-block;
+  list-style: none;
+}
+
+.#{$prefix}list-vertical {
+  margin: 0;
+  padding: 0;
+}
+
+.#{$prefix}list-vertical > a {
+  display: block;
+}
+
+.#{$prefix}list-vertical > li {
+  list-style: none;
+}

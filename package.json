@@ -1,0 +1,32 @@
+{
+  "name": "ea.css",
+  "version": "1.2.5",
+  "description": "Awesome supplement for Bootstrap",
+  "main": "ea.css",
+  "dependencies": {
+    "atob": "^2.1.2",
+    "autoprefixer": "^8.2.0",
+    "browser-sync": "^2.23.6",
+    "cryptiles": "^4.1.2",
+    "deep-extend": "^0.6.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-favicons": "^2.2.7",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "hoek": "^5.0.4",
+    "lodash": "^4.17.11",
+    "merge-stream": "^1.0.1",
+    "mime": "^2.3.1",
+    "minimatch": "^3.0.4",
+    "node-mime": "^1.0.0",
+    "randomatic": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -1,0 +1,9 @@
+// align
+
+@each $prop, $abbrev in (vertical-align: align) {
+  @each $kind in $aligns {
+    .#{$prefix}#{$abbrev}-#{$kind} {
+      #{$prop}: #{$kind} !important;
+    }
+  }
+}

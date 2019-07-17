@@ -1,0 +1,9 @@
+// transition
+
+@each $prop, $abbrev in (transition: transition) {
+  @each $size in $transitions {
+    .#{$prefix}#{$abbrev}-#{$size} {
+      #{$prop}: all #{$size/10}#{$transition_unit};
+    }
+  }
+}

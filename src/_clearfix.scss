@@ -1,0 +1,9 @@
+// clearfix
+
+.#{$prefix}clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}

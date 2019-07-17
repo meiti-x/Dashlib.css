@@ -1,0 +1,62 @@
+// responsive order
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (order: o) {
+      @each $number in $order {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$number} {
+          #{$prop}: #{$number} !important;
+        }
+      }
+    }
+  }
+}
+
+
+//flex-wrap
+
+@each $prop, $abbrev in (flex-wrap: flex-w) {
+  @each $type in $flex-wrap {
+    .#{$prefix}#{$abbrev}-#{$type} {
+      #{$prop}: #{$type} !important;
+    }
+  }
+}
+
+//flex-direction
+@each $prop, $abbrev in (flex-direction: flex-d) {
+  @each $type in $flex-direction {
+    .#{$prefix}#{$abbrev}-#{$type} {
+      #{$prop}: #{$type} !important;
+    }
+  }
+}
+
+//align-items
+@each $prop, $abbrev in (align-items: align-items) {
+  @each $type in $align-items {
+    .#{$prefix}#{$abbrev}-#{$type} {
+      #{$prop}: #{$type} !important;
+    }
+  }
+}
+
+//align-content
+@each $prop, $abbrev in (align-content: align-content) {
+  @each $type in $align-content {
+    .#{$prefix}#{$abbrev}-#{$type} {
+      #{$prop}: #{$type} !important;
+    }
+  }
+}
+
+//justify-content
+@each $prop, $abbrev in (justify-content: justify-content) {
+  @each $type in $align-content {
+    .#{$prefix}#{$abbrev}-#{$type} {
+      #{$prop}: #{$type} !important;
+    }
+  }
+}

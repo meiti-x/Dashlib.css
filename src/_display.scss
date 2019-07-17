@@ -1,0 +1,15 @@
+// display
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (display: d) {
+      @each $kind in $displays {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
+          #{$prop}: #{$kind} !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+// ************************* Using Bootstraps Breakpoint (Bootstrap v4.0.0)
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+// ************************* End using bootstrap
+
+// Prefix
+//
+// Using as Prefix for all classes
+$prefix: em-;
+
+// Spacing
+//
+// Using for margin and padding
+$spacers_from: 0;
+$spacers_to: 60;
+$spacers_step: 5;
+$spacers_unit: px;
+
+$spacers: ();
+@while $spacers_from <= $spacers_to {
+  $spacers: append($spacers, $spacers_from);
+
+  $spacers_from: $spacers_from + $spacers_step;
+}
+
+// borders
+//
+// Using for border and border-radius
+$borders_from: 0;
+$borders_to: 5;
+$borders_step: 1;
+$borders_unit: px;
+
+$borders: ();
+@while $borders_from <= $borders_to {
+  $borders: append($borders, $borders_from);
+
+  $borders_from: $borders_from + $borders_step;
+}
+
+$border_styles: (none, dashed, dotted, hidden, solid);
+
+//
+// display
+//
+$displays: (none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex);
+
+//
+// align
+//
+$aligns: (baseline, top, middle, bottom, text-bottom, text-top);
+
+//
+// font-weight
+//
+$font_weights: (normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900);
+
+//
+// font-style
+//
+$font_style: (normal, italic, oblique);
+
+//
+// text-decoration
+//
+$text_decorations: (none, underline, line-through);
+
+//
+// direction
+//
+$directions: (rtl, ltr);
+
+//
+// line-height
+//
+$line_height_from: 0;
+$line_height_to: 60;
+$line_height_step: 5;
+$line_height_unit: px;
+
+$line_heights: ();
+@while $line_height_from <= $line_height_to {
+  $line_heights: append($line_heights, $line_height_from);
+
+  $line_height_from: $line_height_from + $line_height_step;
+}
+
+//
+// font
+//
+$fonts_from: 0;
+$fonts_to: 60;
+$fonts_step: 1;
+$fonts_unit: px;
+
+$fonts: ();
+@while $fonts_from <= $fonts_to {
+  $fonts: append($fonts, $fonts_from);
+
+  $fonts_from: $fonts_from + $fonts_step;
+}
+
+//
+// text-align
+//
+$text-aligns: (right, center, left, justify);
+
+//
+// position
+//
+$positions: (static, relative, absolute, fixed, sticky);
+
+//
+// z-index
+//
+$z_index_from: 0;
+$z_index_to: 5;
+$z_index_step: 1;
+
+$z_indexes: ();
+@while $z_index_from <= $z_index_to {
+  $z_indexes: append($z_indexes, $z_index_from);
+
+  $z_index_from: $z_index_from + $z_index_step;
+}
+
+//
+// transition
+//
+$transition_from: 0;
+$transition_to: 5;
+$transition_step: 1;
+$transition_unit: s;
+
+$transitions: ();
+@while $transition_from <= $transition_to {
+  $transitions: append($transitions, $transition_from);
+
+  $transition_from: $transition_from + $transition_step;
+}
+
+//
+// float
+//
+$floats: (none, right, left);
+
+//
+// overflow
+//
+$overflows: (visible, hidden, scroll, auto);
+
+//
+// cursor
+//
+$cursors: (unset, default, pointer, text, none, crosshair, not-allowed, move, wait);
+
+//
+// sizing
+//
+$sizing: (25:25%, 50:50%, 75:75%, 100:100%);
+
+
+//
+// colors
+//
+$colors: (white: #FFF, gray-50: #FAFAFA, gray-100:#F5F5F5, gray-200:#EEEEEE, gray-300:#E0E0E0, gray-400:#BDBDBD, gray-500:#9E9E9E, gray-600:#757575, gray-700:#616161, gray-800:#424242, gray-900:#212121, black:#000000);
+
+//
+// display flex options
+//
+$flex-wrap: (nowrap, wrap, wrap-reverse);
+$flex-direction: (row, row-reverse, column, column-reverse);
+$align-items: (flex-start, flex-end, center, baseline, stretch);
+$align-content: (flex-start, flex-end, center, space-between, space-around, stretch);
+$justify-content: (flex-start, flex-end, center, space-between, space-around, space-evenly);
+$order: (1, 2, 3, 4, 5);
+
+
+//
+// background options
+//
+$background-position: (t:top, r:right, l:left, b:bottom, tr:top right, tl:top left, bl:bottom left, br:bottom right, c:center);
+$background-size: (cover, contain, auto);
+$background-repeat: (repeat, no-repeat);
+$object-fit: (cover, contain, fill);

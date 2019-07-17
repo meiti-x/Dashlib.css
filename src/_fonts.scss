@@ -1,0 +1,93 @@
+// font-weight, text-decoration, direction, line-height, ellipsis, font and text-align
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    // font-weight
+    @each $prop, $abbrev in (font-weight: w) {
+      @each $kind in $font_weights {
+        .#{$prefix}#{$infix}font-#{$abbrev}-#{$kind} {
+          #{$prop}: #{$kind} !important;
+        }
+      }
+    }
+
+    // font-style
+    @each $prop, $abbrev in (font-style: style) {
+      @each $kind in $font_style {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
+          #{$prop}: #{$kind} !important;
+        }
+      }
+    }
+
+    // text-decoration
+    @each $prop, $abbrev in (text-decoration: decoration) {
+      @each $kind in $text_decorations {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
+          #{$prop}: #{$kind} !important;
+        }
+      }
+    }
+
+    // direction
+    @each $prop, $abbrev in (direction: direction) {
+      @each $kind in $directions {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
+          #{$prop}: #{$kind} !important;
+        }
+      }
+    }
+
+    // line-height
+    .#{$prefix}#{$infix}ellipsis-none {
+      overflow: initial !important;
+      height: initial !important;
+      text-overflow: initial !important;
+      white-space: initial !important;
+    }
+    .#{$prefix}#{$infix}ellipsis-1 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+    }
+    .#{$prefix}#{$infix}ellipsis-2 {
+      overflow: hidden;
+      line-height: 30px;
+      height: 60px;
+      display: block;
+    }
+
+    @each $prop, $abbrev in (line-height: lh) {
+      @each $size in $line_heights {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$size} {
+          #{$prop}: #{$size}#{$line_height_unit} !important;
+        }
+
+        .#{$prefix}#{$infix}ellipsis-2.#{$prefix}#{$infix}#{$abbrev}-#{$size} {
+          height: #{$size*2}#{$line_height_unit} !important;
+        }
+      }
+    }
+
+    // font
+    @each $prop, $abbrev in (font-size: font) {
+      @each $size in $fonts {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$size} {
+          #{$prop}: #{$size}#{$fonts_unit} !important;
+        }
+      }
+    }
+
+    // text-align
+    @each $prop, $abbrev in (text-align: text) {
+      @each $kind in $text-aligns {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
+          #{$prop}: #{$kind} !important;
+        }
+      }
+    }
+  }
+}

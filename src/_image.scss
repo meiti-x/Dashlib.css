@@ -1,0 +1,17 @@
+// image
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .#{$prefix}#{$infix}image-fluid, .#{$prefix}#{$infix}img-fluid {
+      width: 100%;
+      height: auto;
+    }
+
+    .#{$prefix}#{$infix}image-max-fluid, .#{$prefix}#{$infix}img-max-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

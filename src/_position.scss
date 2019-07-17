@@ -1,0 +1,107 @@
+// position
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (position: position) {
+      @each $kind in $positions {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
+          #{$prop}: #{$kind} !important;
+        }
+      }
+    }
+  }
+}
+
+// Some special position utils
+.#{$prefix}position-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.#{$prefix}position-top-wide, .#{$prefix}position-tw {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.#{$prefix}position-bottom-wide, .#{$prefix}position-bw {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.#{$prefix}position-top-left, .#{$prefix}position-tl {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.#{$prefix}position-top-right, .#{$prefix}position-tr {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.#{$prefix}position-bottom-left, .#{$prefix}position-bl {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.#{$prefix}position-bottom-right, .#{$prefix}position-br {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.#{$prefix}position-middle, .#{$prefix}position-m {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  text-align: center;
+}
+
+.#{$prefix}position-left, .#{$prefix}position-l {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  -ms-transform: translate(-0, -50%);
+}
+
+.#{$prefix}position-right, .#{$prefix}position-r {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+}
+
+.#{$prefix}position-top, .#{$prefix}position-t {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.#{$prefix}position-bottom, .#{$prefix}position-b {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
