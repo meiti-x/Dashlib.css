@@ -1,5 +1,4 @@
 //sizing
-
 @each $prop, $abbrev in (width: w, max-width:mw, height:h, max-height:mh) {
   @each $type, $number in $sizing {
     .#{$prefix}#{$abbrev}-#{$type} {
