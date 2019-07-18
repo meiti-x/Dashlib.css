@@ -3,7 +3,7 @@
 @each $prop, $abbrev in (color: c,background-color:bg,border-color:b) {
   @each $color-name,$color-code in $colors {
     .#{$prefix}#{$abbrev}-#{$color-name} {
-      #{$prop}: $color-code !important;
+      #{$prop}: var(--#{$color-name}) !important;
     }
   }
 }
