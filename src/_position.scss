@@ -4,7 +4,7 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    @each $prop, $abbrev in (position: position) {
+    @each $prop, $abbrev in (position: pos) {
       @each $kind in $positions {
         .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
           #{$prop}: #{$kind} !important;
@@ -23,45 +23,45 @@
   bottom: 0;
 }
 
-.#{$prefix}position-top-wide, .#{$prefix}position-tw {
+.#{$prefix}pos-top-wide, .#{$prefix}pos-tw {
   position: absolute;
   right: 0;
   left: 0;
   top: 0;
 }
 
-.#{$prefix}position-bottom-wide, .#{$prefix}position-bw {
+.#{$prefix}pos-bottom-wide, .#{$prefix}pos-bw {
   position: absolute;
   right: 0;
   left: 0;
   bottom: 0;
 }
 
-.#{$prefix}position-top-left, .#{$prefix}position-tl {
+.#{$prefix}pos-top-left, .#{$prefix}pos-tl {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-.#{$prefix}position-top-right, .#{$prefix}position-tr {
+.#{$prefix}pos-top-right, .#{$prefix}pos-tr {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.#{$prefix}position-bottom-left, .#{$prefix}position-bl {
+.#{$prefix}pos-bottom-left, .#{$prefix}pos-bl {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
-.#{$prefix}position-bottom-right, .#{$prefix}position-br {
+.#{$prefix}pos-bottom-right, .#{$prefix}pos-br {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-.#{$prefix}position-middle, .#{$prefix}position-m {
+.#{$prefix}pos-middle, .#{$prefix}pos-m {
   position: absolute;
   top: 50%;
   left: 0;
@@ -72,7 +72,7 @@
   text-align: center;
 }
 
-.#{$prefix}position-left, .#{$prefix}position-l {
+.#{$prefix}pos-left, .#{$prefix}pos-l {
   position: absolute;
   top: 50%;
   left: 0;
@@ -80,7 +80,7 @@
   -ms-transform: translate(-0, -50%);
 }
 
-.#{$prefix}position-right, .#{$prefix}position-r {
+.#{$prefix}pos-right, .#{$prefix}pos-r {
   position: absolute;
   top: 50%;
   right: 0;
@@ -88,7 +88,7 @@
   -ms-transform: translate(0, -50%);
 }
 
-.#{$prefix}position-top, .#{$prefix}position-t {
+.#{$prefix}pos-top, .#{$prefix}pos-t {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,7 +97,7 @@
   text-align: center;
 }
 
-.#{$prefix}position-bottom, .#{$prefix}position-b {
+.#{$prefix}pos-bottom, .#{$prefix}pos-b {
   position: absolute;
   bottom: 0;
   left: 0;
