@@ -3,28 +3,22 @@
 //
 // border
 //
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    @each $prop, $abbrev in (border: b) {
-      @each $size in $borders {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$size} {
-          #{$prop}: #{$size}#{$borders_unit} solid;
-        }
-        .#{$prefix}#{$infix}#{$abbrev}t-#{$size} {
-          #{$prop}-top: #{$size}#{$borders_unit} solid;
-        }
-        .#{$prefix}#{$infix}#{$abbrev}r-#{$size} {
-          #{$prop}-right: #{$size}#{$borders_unit} solid;
-        }
-        .#{$prefix}#{$infix}#{$abbrev}b-#{$size} {
-          #{$prop}-bottom: #{$size}#{$borders_unit} solid;
-        }
-        .#{$prefix}#{$infix}#{$abbrev}l-#{$size} {
-          #{$prop}-left: #{$size}#{$borders_unit} solid;
-        }
-      }
+@each $prop, $abbrev in (border: b) {
+  @each $size in $borders {
+    .#{$prefix}#{$abbrev}-#{$size} {
+      #{$prop}: #{$size}#{$borders_unit} solid ;
+    }
+    .#{$prefix}#{$abbrev}t-#{$size} {
+      #{$prop}-top: #{$size}#{$borders_unit} solid;
+    }
+    .#{$prefix}#{$abbrev}r-#{$size} {
+      #{$prop}-right: #{$size}#{$borders_unit} solid;
+    }
+    .#{$prefix}#{$abbrev}b-#{$size} {
+      #{$prop}-bottom: #{$size}#{$borders_unit} solid;
+    }
+    .#{$prefix}#{$abbrev}l-#{$size} {
+      #{$prop}-left: #{$size}#{$borders_unit} solid;
     }
   }
 }
@@ -32,16 +26,10 @@
 //
 // border-style
 //
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    @each $prop, $abbrev in (border-style: b) {
-      @each $kind in $border_styles {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
-          #{$prop}: #{$kind} !important;
-        }
-      }
+@each $prop, $abbrev in (border-style: b) {
+  @each $kind in $border_styles {
+    .#{$prefix}#{$abbrev}-#{$kind} {
+      #{$prop}: #{$kind} !important;
     }
   }
 }
@@ -49,24 +37,18 @@
 //
 // border-radius
 //
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    @each $prop, $abbrev in (border-radius: radius) {
-      @each $size in $borders {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$size} {
-          #{$prop}: #{$size}#{$borders_unit} !important;
-        }
-      }
-    }
-
-    // Some special margin utils
-    .#{$prefix}#{$infix}round {
-      border-radius: 99999px !important;
-    }
-    .#{$prefix}#{$infix}circle {
-      border-radius: 50% !important;
+@each $prop, $abbrev in (border-radius: radius) {
+  @each $size in $borders {
+    .#{$prefix}#{$abbrev}-#{$size} {
+      #{$prop}: #{$size}#{$borders_unit} !important;
     }
   }
+}
+
+// Some special margin utils
+.#{$prefix}round {
+  border-radius: 99999px !important;
+}
+.#{$prefix}circle {
+  border-radius: 50% !important;
 }
