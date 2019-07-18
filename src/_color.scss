@@ -1,6 +1,6 @@
 // colors
 
-@each $prop, $abbrev in (color: color,background-color:bg-color,border-color:b-color) {
+@each $prop, $abbrev in (color: color,background-color:bg-,border-color:b-) {
   @each $color-name,$color-code in $colors {
     .#{$prefix}#{$abbrev}-#{$color-name} {
       #{$prop}: $color-code !important;
