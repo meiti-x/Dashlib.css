@@ -5,8 +5,8 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $prop, $abbrev in (display: d) {
-      @each $kind in $displays {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
+      @each $kind,$short in $displays {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$short} {
           #{$prop}: #{$kind} !important;
         }
       }
