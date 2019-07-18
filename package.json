@@ -1,8 +1,8 @@
 {
-  "name": "ea.css",
-  "version": "1.2.5",
-  "description": "Awesome supplement for Bootstrap",
-  "main": "ea.css",
+  "name": "em.css",
+  "version": "1.1.5",
+  "description": "Stylish, modern, compact and powerful front-end library for faster and easier web development.",
+  "main": "em.css",
   "dependencies": {
     "atob": "^2.1.2",
     "autoprefixer": "^8.2.0",

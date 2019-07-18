@@ -1,5 +1,3 @@
-![logo](/home/mahdi/Desktop/logo.png)
-
 ### em.css
 
 Stylish, modern, compact and powerful front-end library for faster and easier web development. 
@@ -12,13 +10,11 @@ Several quick start options are available:
 
 - [Download the latest release.](https://github.com/mahdi-momeni/em.css/archive/master.zip)
 - Clone the repo: `git clone https://github.com/mahdi-momeni/em.css.git`
-- Install with [npm](https://www.npmjs.com/): `npm install bootstrap`
-- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@4.3.1`
-- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:4.3.1`
+- Install with [npm](https://www.npmjs.com/): `npm i em.css`
 
 
 
-#### for run gulp task you should use or install node v10
+#### for run gulp v3.9.1 tasks you should use or install node v10
 
 
 
