@@ -43,7 +43,7 @@
 
     //justify-content
     @each $prop, $abbrev in (justify-content: jc) {
-      @each $type in $align-content {
+      @each $type in $align-items {
         .#{$prefix}#{$infix}#{$abbrev}-#{$type} {
           #{$prop}: #{$type} !important;
         }
