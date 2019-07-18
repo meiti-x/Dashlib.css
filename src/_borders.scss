@@ -10,19 +10,19 @@
     @each $prop, $abbrev in (border: b) {
       @each $size in $borders {
         .#{$prefix}#{$infix}#{$abbrev}-#{$size} {
-          #{$prop}: #{$size}#{$borders_unit} solid !important;
+          #{$prop}: #{$size}#{$borders_unit} solid;
         }
         .#{$prefix}#{$infix}#{$abbrev}t-#{$size} {
-          #{$prop}-top: #{$size}#{$borders_unit} solid !important;
+          #{$prop}-top: #{$size}#{$borders_unit} solid;
         }
         .#{$prefix}#{$infix}#{$abbrev}r-#{$size} {
-          #{$prop}-right: #{$size}#{$borders_unit} solid !important;
+          #{$prop}-right: #{$size}#{$borders_unit} solid;
         }
         .#{$prefix}#{$infix}#{$abbrev}b-#{$size} {
-          #{$prop}-bottom: #{$size}#{$borders_unit} solid !important;
+          #{$prop}-bottom: #{$size}#{$borders_unit} solid;
         }
         .#{$prefix}#{$infix}#{$abbrev}l-#{$size} {
-          #{$prop}-left: #{$size}#{$borders_unit} solid !important;
+          #{$prop}-left: #{$size}#{$borders_unit} solid;
         }
       }
     }

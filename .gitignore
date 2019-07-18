@@ -1,5 +1,5 @@
 node_modules/
 .idea/
 gulpfile.js/
-/index.html/
+/index.html
 dist/
