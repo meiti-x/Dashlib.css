@@ -22,7 +22,7 @@
     }
 
     // text-decoration
-    @each $prop, $abbrev in (text-decoration: decoration) {
+    @each $prop, $abbrev in (text-decoration: decor) {
       @each $kind in $text_decorations {
         .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
           #{$prop}: #{$kind} !important;
@@ -31,7 +31,7 @@
     }
 
     // direction
-    @each $prop, $abbrev in (direction: direction) {
+    @each $prop, $abbrev in (direction: dir) {
       @each $kind in $directions {
         .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
           #{$prop}: #{$kind} !important;
