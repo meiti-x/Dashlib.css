@@ -11,52 +11,44 @@
         }
       }
     }
-  }
-}
 
 
-//flex-wrap
+    //flex-wrap
 
-@each $prop, $abbrev in (flex-wrap: flex-w) {
-  @each $type in $flex-wrap {
-    .#{$prefix}#{$abbrev}-#{$type} {
-      #{$prop}: #{$type} !important;
+    @each $prop, $abbrev in (flex-wrap: flex-w) {
+      @each $type in $flex-wrap {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$type} {
+          #{$prop}: #{$type} !important;
+        }
+      }
+    }
+
+    //flex-direction
+    @each $prop, $abbrev in (flex-direction: flex-d) {
+      @each $type in $flex-direction {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$type} {
+          #{$prop}: #{$type} !important;
+        }
+      }
+    }
+
+    //align-items
+    @each $prop, $abbrev in (align-items: ai) {
+      @each $type in $align-items {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$type} {
+          #{$prop}: #{$type} !important;
+        }
+      }
+    }
+
+    //justify-content
+    @each $prop, $abbrev in (justify-content: jc) {
+      @each $type in $align-content {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$type} {
+          #{$prop}: #{$type} !important;
+        }
+      }
     }
   }
 }
 
-//flex-direction
-@each $prop, $abbrev in (flex-direction: flex-d) {
-  @each $type in $flex-direction {
-    .#{$prefix}#{$abbrev}-#{$type} {
-      #{$prop}: #{$type} !important;
-    }
-  }
-}
-
-//align-items
-@each $prop, $abbrev in (align-items: align-items) {
-  @each $type in $align-items {
-    .#{$prefix}#{$abbrev}-#{$type} {
-      #{$prop}: #{$type} !important;
-    }
-  }
-}
-
-//align-content
-@each $prop, $abbrev in (align-content: align-content) {
-  @each $type in $align-content {
-    .#{$prefix}#{$abbrev}-#{$type} {
-      #{$prop}: #{$type} !important;
-    }
-  }
-}
-
-//justify-content
-@each $prop, $abbrev in (justify-content: justify-content) {
-  @each $type in $align-content {
-    .#{$prefix}#{$abbrev}-#{$type} {
-      #{$prop}: #{$type} !important;
-    }
-  }
-}
