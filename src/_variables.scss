@@ -176,10 +176,8 @@ $sizing: (25:25%, 50:50%, 75:75%, 100:100%);
 
 
 //== colors
-$colors: (white: #FFF, gray-50: #FAFAFA, gray-100:#F5F5F5, gray-200:#EEEEEE, gray-300:#E0E0E0, gray-400:#BDBDBD, gray-500:#9E9E9E, gray-600:#757575,gray-700:#616161, gray-800:#424242, gray-900:#212121, black:#000000
-
-)
-;
+$colors: (white: #FFF, gray-50: #FAFAFA, gray-100:#F5F5F5, gray-200:#EEEEEE, gray-300:#E0E0E0, gray-400:#BDBDBD, gray-500:#9E9E9E, gray-600:#757575, gray-700:#616161, gray-800:#424242, gray-900:#212121, black:#000000
+);
 
 :root {
   // each item in color map
@@ -206,3 +204,9 @@ $background-size: (cover, contain, auto);
 $background-repeat: (repeat, no-repeat);
 $object-fit: (cover, contain, fill);
 $object-position: (t:top, r:right, l:left, b:bottom, tr:top right, tl:top left, bl:bottom left, br:bottom right, c:center);
+
+
+//
+// resize
+//
+$resize: (none, both, horizontal, vertical);
