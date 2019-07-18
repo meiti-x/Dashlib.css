@@ -6,7 +6,7 @@
 
     @each $prop, $abbrev in (overflow: of) {
       @each $kind in $overflows {
-        .#{$prefix}#{$infix}#{$prop}-#{$kind}, .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
+        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
           #{$prop}: #{$kind} !important;
         }
       }
