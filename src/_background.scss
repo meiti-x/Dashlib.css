@@ -1,0 +1,39 @@
+@each $prop, $abbrev in (background-position: bg-pos) {
+  @each $kind, $value in $background-position {
+    .#{$prefix}#{$abbrev}-#{$kind} {
+      #{$prop}: #{$value} !important;
+    }
+  }
+}
+
+@each $prop, $abbrev in (object-position: obj-pos) {
+  @each $kind, $value in $object-position {
+    .#{$prefix}#{$abbrev}-#{$kind} {
+      #{$prop}: #{$value} !important;
+    }
+  }
+}
+
+@each $prop, $abbrev in (background-size: bg-size) {
+  @each $kind in $background-size {
+    .#{$prefix}#{$abbrev}-#{$kind} {
+      #{$prop}: #{$kind} !important;
+    }
+  }
+}
+
+@each $prop, $abbrev in (object-fit: obj-fit) {
+  @each $kind in $object-fit {
+    .#{$prefix}#{$abbrev}-#{$kind} {
+      #{$prop}: #{$kind} !important;
+    }
+  }
+}
+
+@each $prop, $abbrev in (background-repeat: bg-repeat) {
+  @each $kind in $background-repeat {
+    .#{$prefix}#{$abbrev}-#{$kind} {
+      #{$prop}: #{$kind} !important;
+    }
+  }
+}
