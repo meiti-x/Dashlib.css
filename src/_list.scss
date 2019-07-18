@@ -1,28 +1,28 @@
 // list
 
-.#{$prefix}list-horizontal {
+.#{$prefix}list-hor {
   margin: 0;
   padding: 0;
 }
 
-.#{$prefix}list-horizontal > a {
+.#{$prefix}list-hor > a {
   display: inline-block;
 }
 
-.#{$prefix}list-horizontal > li {
+.#{$prefix}list-hor > li {
   display: inline-block;
   list-style: none;
 }
 
-.#{$prefix}list-vertical {
+.#{$prefix}list-ver {
   margin: 0;
   padding: 0;
 }
 
-.#{$prefix}list-vertical > a {
+.#{$prefix}list-ver > a {
   display: block;
 }
 
-.#{$prefix}list-vertical > li {
+.#{$prefix}list-ver > li {
   list-style: none;
 }
