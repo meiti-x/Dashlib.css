@@ -2,4 +2,3 @@ node_modules/
 .idea/
 gulpfile.js/
 /index.html
-dist/
