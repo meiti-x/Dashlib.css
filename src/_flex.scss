@@ -4,50 +4,132 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
+    //order
     @each $prop, $abbrev in (order: o) {
       @each $number in $order {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$number} {
+        .#{$prefix}#{$abbrev}-#{$number}#{$infix} {
           #{$prop}: #{$number} !important;
         }
       }
     }
 
-
     //flex-wrap
-
-    @each $prop, $abbrev in (flex-wrap: flex-w) {
-      @each $type in $flex-wrap {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$type} {
-          #{$prop}: #{$type} !important;
+    @each $prop, $abbrev in (flex-wrap: flx-w) {
+      @each $type, $value in $flex-wrap {
+        .#{$prefix}flx-#{$type}#{$infix} {
+          #{$prop}: #{$value} !important;
         }
       }
     }
 
     //flex-direction
-    @each $prop, $abbrev in (flex-direction: flex-d) {
-      @each $type in $flex-direction {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$type} {
-          #{$prop}: #{$type} !important;
+    @each $prop, $abbrev in (flex-direction: flx-d) {
+      @each $type, $value in $flex-direction {
+        .#{$prefix}#{$abbrev}-#{$type}#{$infix} {
+          #{$prop}: #{$value} !important;
         }
       }
     }
 
     //align-items
     @each $prop, $abbrev in (align-items: ai) {
-      @each $type in $align-items {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$type} {
-          #{$prop}: #{$type} !important;
+      @each $type, $value in $align-items {
+        .#{$prefix}#{$abbrev}-#{$type}#{$infix} {
+          #{$prop}: #{$value} !important;
         }
       }
     }
 
     //justify-content
     @each $prop, $abbrev in (justify-content: jc) {
-      @each $type in $justify-content {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$type} {
-          #{$prop}: #{$type} !important;
+      @each $type, $value in $justify-content {
+        .#{$prefix}#{$abbrev}-#{$type}#{$infix} {
+          #{$prop}: #{$value} !important;
         }
       }
+    }
+
+    //align-self
+    @each $prop, $abbrev in (align-self : as) {
+      @each $type, $value in $align-self {
+        .#{$prefix}#{$abbrev}-#{$type}#{$infix} {
+          #{$prop}: #{$value} !important;
+        }
+      }
+    }
+
+    //for filling parent
+    .#{$prefix}flx-fil#{$infix} {
+      -ms-flex: 1 1 auto !important;
+      flex: 1 1 auto !important;
+    }
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints-only) {
+  @include media-breakpoint-only($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @if $infix == '' {
+      $infix: '_xs';
+    }
+    //order
+    @each $prop, $abbrev in (order: o) {
+      @each $number in $order {
+        .#{$prefix}#{$abbrev}-#{$number}_o#{$infix} {
+          #{$prop}: #{$number} !important;
+        }
+      }
+    }
+
+    //flex-wrap
+    @each $prop, $abbrev in (flex-wrap: flx-w) {
+      @each $type, $value in $flex-wrap {
+        .#{$prefix}flx-#{$type}_o#{$infix} {
+          #{$prop}: #{$value} !important;
+        }
+      }
+    }
+
+    //flex-direction
+    @each $prop, $abbrev in (flex-direction: flx-d) {
+      @each $type, $value in $flex-direction {
+        .#{$prefix}#{$abbrev}-#{$type}_o#{$infix} {
+          #{$prop}: #{$value} !important;
+        }
+      }
+    }
+
+    //align-items
+    @each $prop, $abbrev in (align-items: ai) {
+      @each $type, $value in $align-items {
+        .#{$prefix}#{$abbrev}-#{$type}_o#{$infix} {
+          #{$prop}: #{$value} !important;
+        }
+      }
+    }
+
+    //justify-content
+    @each $prop, $abbrev in (justify-content: jc) {
+      @each $type, $value in $justify-content {
+        .#{$prefix}#{$abbrev}-#{$type}_o#{$infix} {
+          #{$prop}: #{$value} !important;
+        }
+      }
+    }
+
+    //align-self
+    @each $prop, $abbrev in (align-self : as) {
+      @each $type, $value in $align-self {
+        .#{$prefix}#{$abbrev}-#{$type}_o#{$infix} {
+          #{$prop}: #{$value} !important;
+        }
+      }
+    }
+
+    //for filling parent
+    .#{$prefix}flx-fil_o#{$infix} {
+      -ms-flex: 1 1 auto !important;
+      flex: 1 1 auto !important;
     }
   }
 }

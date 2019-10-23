@@ -1,8 +1,8 @@
 // cursor
 @each $prop, $abbrev in (resize: resize) {
-  @each $kind in $resize {
+  @each $kind,$value in $resize {
     .#{$prefix}#{$abbrev}-#{$kind} {
-      #{$prop}: #{$kind} !important;
+      #{$prop}: #{$value} !important;
     }
   }
 }

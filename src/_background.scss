@@ -6,6 +6,7 @@
   }
 }
 
+//object position
 @each $prop, $abbrev in (object-position: obj-pos) {
   @each $kind, $value in $object-position {
     .#{$prefix}#{$abbrev}-#{$kind} {
@@ -14,26 +15,38 @@
   }
 }
 
+//background size
 @each $prop, $abbrev in (background-size: bg-size) {
-  @each $kind in $background-size {
+  @each $kind,$value in $background-size {
     .#{$prefix}#{$abbrev}-#{$kind} {
-      #{$prop}: #{$kind} !important;
+      #{$prop}: #{$value} !important;
     }
   }
 }
 
+//object-fit
 @each $prop, $abbrev in (object-fit: obj-fit) {
-  @each $kind in $object-fit {
+  @each $kind,$value in $object-fit {
     .#{$prefix}#{$abbrev}-#{$kind} {
-      #{$prop}: #{$kind} !important;
+      #{$prop}: #{$value} !important;
     }
   }
 }
 
-@each $prop, $abbrev in (background-repeat: bg-repeat) {
-  @each $kind in $background-repeat {
+//background repeat
+@each $prop, $abbrev in (background-repeat: bg) {
+  @each $kind,$value in $background-repeat {
     .#{$prefix}#{$abbrev}-#{$kind} {
-      #{$prop}: #{$kind} !important;
+      #{$prop}: #{$value} !important;
+    }
+  }
+}
+
+//background attachment
+@each $prop, $abbrev in (background-attachment: bg-att) {
+  @each $kind,$value in $background-attachment {
+    .#{$prefix}#{$abbrev}-#{$kind} {
+      #{$prop}: #{$value} !important;
     }
   }
 }

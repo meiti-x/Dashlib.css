@@ -5,9 +5,25 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $prop, $abbrev in (position: pos) {
-      @each $kind in $positions {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
-          #{$prop}: #{$kind} !important;
+      @each $kind,$value in $positions {
+        .#{$prefix}#{$abbrev}-#{$kind}#{$infix} {
+          #{$prop}: #{$value} !important;
+        }
+      }
+    }
+  }
+}
+@each $breakpoint in map-keys($grid-breakpoints-only) {
+  @include media-breakpoint-only($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @if $infix == '' {
+      $infix: '_xs';
+    }
+
+    @each $prop, $abbrev in (position: pos) {
+      @each $kind,$value in $positions {
+        .#{$prefix}#{$abbrev}-#{$kind}_o#{$infix} {
+          #{$prop}: #{$value} !important;
         }
       }
     }
@@ -15,7 +31,7 @@
 }
 
 // Some special position utils
-.#{$prefix}position-cover {
+.#{$prefix}pos-cover {
   position: absolute;
   top: 0;
   right: 0;

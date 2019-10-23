@@ -4,12 +4,12 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .#{$prefix}#{$infix}img-fluid {
+    .#{$prefix}img-fluid#{$infix} {
       width: 100%;
       height: auto;
     }
 
-    .#{$prefix}#{$infix}img-max-fluid {
+    .#{$prefix}img-max-fluid#{$infix} {
       max-width: 100%;
       height: auto;
     }

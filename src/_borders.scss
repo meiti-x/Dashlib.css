@@ -27,9 +27,9 @@
 // border-style
 //
 @each $prop, $abbrev in (border-style: b) {
-  @each $kind in $border_styles {
+  @each $kind, $value in $border_styles {
     .#{$prefix}#{$abbrev}-#{$kind} {
-      #{$prop}: #{$kind} !important;
+      #{$prop}: #{$value} !important;
     }
   }
 }
@@ -37,7 +37,7 @@
 //
 // border-radius
 //
-@each $prop, $abbrev in (border-radius: radius) {
+@each $prop, $abbrev in (border-radius: rad) {
   @each $size in $borders {
     .#{$prefix}#{$abbrev}-#{$size} {
       #{$prop}: #{$size}#{$borders_unit} !important;
@@ -45,10 +45,10 @@
   }
 }
 
-// Some special margin utils
-.#{$prefix}round {
+// Some special radius
+.#{$prefix}rad-round {
   border-radius: 99999px !important;
 }
-.#{$prefix}circle {
+.#{$prefix}rad-circle {
   border-radius: 50% !important;
 }

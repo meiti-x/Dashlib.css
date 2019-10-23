@@ -10,7 +10,14 @@ $grid-breakpoints: (
         sm: 576px,
         md: 768px,
         lg: 992px,
-        xl: 1200px
+        xl: 1200px,
+) !default;
+
+$grid-breakpoints-only: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -21,7 +28,7 @@ $grid-breakpoints: (
 // Prefix
 //
 // Using as Prefix for all classes
-$prefix: em-;
+$prefix: '-';
 
 // Spacing
 //
@@ -53,17 +60,17 @@ $borders: ();
   $borders_from: $borders_from + $borders_step;
 }
 
-$border_styles: (none, dashed, dotted, hidden, solid);
+$border_styles: (non:none, dash:dashed, dot:dotted, hid:hidden, soli:solid);
 
 //
 // display
 //
-$displays: (none:none, inline:in, inline-block:in-block, block:block, table:table, table-row:table-row, table-cell:table-cell, flex:flex, inline-flex:in-flex);
+$displays: (none:none, inline:in, inline-block:in-bloc, block:bloc, table:table, table-row:table-r, table-cell:table-cel, flex:flx, inline-flex:in-flx);
 
 //
 // align
 //
-$aligns: (baseline, top, middle, bottom, text-bottom, text-top);
+$aligns: (base-l:baseline, t:top, m:middle, b:bottom, txt-b:text-bottom, txt-t:text-top);
 
 //
 // font-weight
@@ -73,12 +80,12 @@ $font_weights: (normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700
 //
 // font-style
 //
-$font_style: (normal, italic, oblique);
+$font_style: (nor:normal, ita:italic, obl:oblique);
 
 //
 // text-decoration
 //
-$text_decorations: (none, underline, line-through);
+$text_decorations: (non:none, under:underline, l-thro:line-through);
 
 //
 // direction
@@ -118,12 +125,12 @@ $fonts: ();
 //
 // text-align
 //
-$text-aligns: (right, center, left, justify);
+$text-aligns: (r:right, cen:center, l:left, just:justify);
 
 //
 // position
 //
-$positions: (static, relative, absolute, fixed, sticky);
+$positions: (stat:static, rel:relative, abs:absolute, fix:fixed, stic:sticky);
 
 //
 // z-index
@@ -157,26 +164,30 @@ $transitions: ();
 //
 // float
 //
-$floats: (none, right, left);
+$floats: (none:none, r:right, l:left);
 
 //
 // overflow
 //
-$overflows: (visible, hidden, scroll, auto);
+$overflows: (vis:visible, hid:hidden, scro:scroll, auto:auto);
 
 //
 // cursor
 //
-$cursors: (unset, default, pointer, text, none, crosshair, not-allowed, move, wait);
+$cursors: (unset:unset, def:default, poin:pointer, txt:text, non:none, cross:crosshair, not-alow:not-allowed, mov:move, wait:wait
+);
 
 //
 // sizing
 //
 $sizing: (25:25%, 50:50%, 75:75%, 100:100%);
 
-
-//== colors
-$colors: (white: #FFF, gray-50: #FAFAFA, gray-100:#F5F5F5, gray-200:#EEEEEE, gray-300:#E0E0E0, gray-400:#BDBDBD, gray-500:#9E9E9E, gray-600:#757575, gray-700:#616161, gray-800:#424242, gray-900:#212121, black:#000000
+//
+//colors
+//
+$colors: (white: #FFF, gray-50: #FAFAFA, gray-100:#F5F5F5, gray-200:#EEEEEE, gray-300:#E0E0E0, gray-400:#BDBDBD,
+        gray-500:#9E9E9E, gray-600:#757575, gray-700:#616161, gray-800:#424242, gray-900:#212121, black:#000000,
+        primary:#007bff, secondary:#6C757D, success:#28A745, danger:#DC3545, warning:#FFC107, light:#F8F9FA, dark:#343A40
 );
 
 :root {
@@ -189,10 +200,11 @@ $colors: (white: #FFF, gray-50: #FAFAFA, gray-100:#F5F5F5, gray-200:#EEEEEE, gra
 //
 // display flex options
 //
-$flex-wrap: (nowrap, wrap, wrap-reverse);
-$flex-direction: (row, row-reverse, column, column-reverse);
-$align-items: (flex-start, flex-end, center, baseline, stretch);
-$justify-content: (flex-start, flex-end, center, space-between, space-around, space-evenly);
+$flex-wrap: (w-n:nowrap, w:wrap, w-r:wrap-reverse);
+$flex-direction: (r:row, rr:row-reverse, c:column, cr:column-reverse);
+$align-items: (start:flex-start, end:flex-end, cent: center, base-l:baseline, stre:stretch);
+$align-self: (start:flex-start, end:flex-end, cent: center, base-l:baseline, stre:stretch, auto:auto);
+$justify-content: (start:flex-start, end:flex-end, cent:center, space-bet:space-between, space-around:space-around, space-eve:space-evenly);
 $order: (1, 2, 3, 4, 5);
 
 
@@ -200,13 +212,14 @@ $order: (1, 2, 3, 4, 5);
 // background options
 //
 $background-position: (t:top, r:right, l:left, b:bottom, tr:top right, tl:top left, bl:bottom left, br:bottom right, c:center);
-$background-size: (cover, contain, auto);
-$background-repeat: (repeat, no-repeat);
-$object-fit: (cover, contain, fill);
+$background-size: (cov:cover, con:contain, auto:auto);
+$background-repeat: (rep:repeat, rep-n:no-repeat);
+$background-attachment: (fix:fix, scro:scroll, loc:local);
+$object-fit: (cov:cover, con:contain, fil:fill);
 $object-position: (t:top, r:right, l:left, b:bottom, tr:top right, tl:top left, bl:bottom left, br:bottom right, c:center);
 
 
 //
 // resize
 //
-$resize: (none, both, horizontal, vertical);
+$resize: (non:none, both:both, hor:horizontal, ver:vertical);

@@ -15,7 +15,9 @@ const rename = require('gulp-rename');
 // variables
 let paths = {
     srcStyle: "src/em.scss",
+    srcFont: "src/fonts/*/*.*",
     distStyle: "dist",
+    distFont: "dist/fonts",
 };
 
 // Compile and minify style files
@@ -38,5 +40,13 @@ gulp.task('style', function () {
         .pipe(gulp.dest(paths.distStyle));
 });
 
+gulp.task('font', function () {
+    let fonts = gulp.src(paths.srcFont);
+
+
+    return mergeStream(fonts)
+        .pipe(gulp.dest(paths.distFont));
+});
+
 // Default
-gulp.task('default', ['style']);
+gulp.task('default', ['style','font']);

@@ -6,7 +6,23 @@
 
     @each $prop, $abbrev in (display: d) {
       @each $kind,$short in $displays {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$short} {
+        .#{$prefix}#{$abbrev}-#{$short}#{$infix} {
+          #{$prop}: #{$kind} !important;
+        }
+      }
+    }
+  }
+}
+@each $breakpoint in map-keys($grid-breakpoints-only) {
+  @include media-breakpoint-only($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @if $infix == '' {
+      $infix: '_xs';
+    }
+
+    @each $prop, $abbrev in (display: d) {
+      @each $kind,$short in $displays {
+        .#{$prefix}#{$abbrev}-#{$short}_o#{$infix} {
           #{$prop}: #{$kind} !important;
         }
       }

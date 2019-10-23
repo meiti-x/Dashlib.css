@@ -6,23 +6,24 @@
     // font
     @each $prop, $abbrev in (font-size: font) {
       @each $size in $fonts {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$size} {
+        .#{$prefix}#{$abbrev}-#{$size}#{$infix} {
           #{$prop}: #{$size}#{$fonts_unit} !important;
         }
       }
     }
 
     // text-align
-    @each $prop, $abbrev in (text-align: text) {
-      @each $kind in $text-aligns {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
-          #{$prop}: #{$kind} !important;
+    @each $prop, $abbrev in (text-align: txt) {
+      @each $kind, $value in $text-aligns {
+        .#{$prefix}#{$abbrev}-#{$kind}#{$infix} {
+          #{$prop}: #{$value} !important;
         }
       }
     }
   }
 }
 
+//line height
 @each $prop, $abbrev in (line-height: lh) {
   @each $size in $line_heights {
     .#{$prefix}#{$abbrev}-#{$size} {
@@ -31,11 +32,10 @@
   }
 }
 
-
 // font-weight
-@each $prop, $abbrev in (font-weight: w) {
+@each $prop, $abbrev in (font-weight: font-w) {
   @each $kind in $font_weights {
-    .#{$prefix}font-#{$abbrev}-#{$kind} {
+    .#{$prefix}#{$abbrev}-#{$kind} {
       #{$prop}: #{$kind} !important;
     }
   }
@@ -43,18 +43,18 @@
 
 // font-style
 @each $prop, $abbrev in (font-style: font-s) {
-  @each $kind in $font_style {
+  @each $kind, $value in $font_style {
     .#{$prefix}#{$abbrev}-#{$kind} {
-      #{$prop}: #{$kind} !important;
+      #{$prop}: #{$value} !important;
     }
   }
 }
 
 // text-decoration
 @each $prop, $abbrev in (text-decoration: decor) {
-  @each $kind in $text_decorations {
+  @each $kind, $value in $text_decorations {
     .#{$prefix}#{$abbrev}-#{$kind} {
-      #{$prop}: #{$kind} !important;
+      #{$prop}: #{$value} !important;
     }
   }
 }
@@ -76,6 +76,59 @@
   white-space: initial !important;
 }
 
+
+// RFS: responsive font size
+// headings
+.#{$prefix}h1 {
+  font-size: calc(1rem + 0.84vw);
+}
+
+.#{$prefix}h2 {
+  font-size: calc(1rem + 0.65vw);
+}
+
+.#{$prefix}h3 {
+  font-size: calc(1rem + 0.35vw);
+}
+
+.#{$prefix}h4 {
+  font-size: calc(1rem + 0.25vw);
+}
+
+.#{$prefix}h5 {
+  font-size: calc(0.9rem + 0.15vw);
+}
+
+.#{$prefix}h6 {
+  font-size: calc(1rem + 0.05vw)
+}
+
+// texts
+.#{$prefix}txt-huge {
+  font-size: calc(1rem + 0.4vw);
+}
+
+.#{$prefix}txt-big {
+  font-size: calc(1rem + 0.2vw);
+}
+
+.#{$prefix}txt-med {
+  font-size: calc(1rem + 0.1vw);
+}
+
+.#{$prefix}txt-small {
+  font-size: calc(1rem + 0.05vw);
+}
+
+.#{$prefix}txt-smaller {
+  font-size: calc(0.95rem + 0vw);
+}
+
+.#{$prefix}txt-tiny {
+  font-size: calc(0.85rem + 0vw);
+}
+
+// utils
 .#{$prefix}ellipsis-1 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -89,3 +142,9 @@
   height: 60px;
   display: block;
 }
+
+.#{$prefix}txt-break {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+

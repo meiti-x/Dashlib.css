@@ -1,9 +1,9 @@
 // align
 
-@each $prop, $abbrev in (vertical-align: align) {
-  @each $kind in $aligns {
+@each $prop, $abbrev in (vertical-align: v-align) {
+  @each $kind ,$value in $aligns {
     .#{$prefix}#{$abbrev}-#{$kind} {
-      #{$prop}: #{$kind} !important;
+      #{$prop}: #{$value} !important;
     }
   }
 }

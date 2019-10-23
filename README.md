@@ -1,10 +1,14 @@
-### em.css
+#em.css
 
+em.css came about after I got tired of writing CSS. All of the CSS in the world has already been written, and there's no need to rewrite it in every one of our projects.we came up with a naming scheme we were satisfied with, and em.css was born.
 Stylish, modern, compact and powerful front-end library for faster and easier web development. 
 
 completely responsive base on bootstrap v4 grid system
 
-# Quick start
+<br>
+<br>
+
+### Quick start
 
 Several quick start options are available:
 
@@ -21,6 +25,8 @@ Several quick start options are available:
 ##### Step 1 – Install NVM
 
 ` curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash ` 
+
+you must install v10 of nodejs or if you installed nodejs v12 switch to v10 like below steps
 
 
 

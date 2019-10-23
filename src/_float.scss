@@ -5,9 +5,9 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $prop, $abbrev in (float: float) {
-      @each $kind in $floats {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$kind} {
-          #{$prop}: #{$kind} !important;
+      @each $kind,$value in $floats {
+        .#{$prefix}#{$abbrev}-#{$kind}#{$infix} {
+          #{$prop}: #{$value} !important;
         }
       }
     }

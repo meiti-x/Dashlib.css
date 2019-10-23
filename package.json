@@ -1,6 +1,6 @@
 {
   "name": "em.css",
-  "version": "1.1.5",
+  "version": "2",
   "description": "Stylish, modern, compact and powerful front-end library for faster and easier web development.",
   "main": "em.css",
   "dependencies": {

@@ -6,46 +6,96 @@
 
     @each $prop, $abbrev in (margin: m, padding: p) {
       @each $size in $spacers {
-        .#{$prefix}#{$infix}#{$abbrev}-#{$size} {
+        .#{$prefix}#{$abbrev}-#{$size}#{$infix} {
           #{$prop}: #{$size}#{$spacers_unit} !important;
         }
-        .#{$prefix}#{$infix}#{$abbrev}t-#{$size},
-        .#{$prefix}#{$infix}#{$abbrev}y-#{$size} {
+        .#{$prefix}#{$abbrev}t-#{$size}#{$infix},
+        .#{$prefix}#{$abbrev}y-#{$size}#{$infix} {
           #{$prop}-top: #{$size}#{$spacers_unit} !important;
         }
-        .#{$prefix}#{$infix}#{$abbrev}r-#{$size},
-        .#{$prefix}#{$infix}#{$abbrev}x-#{$size} {
+        .#{$prefix}#{$abbrev}r-#{$size}#{$infix},
+        .#{$prefix}#{$abbrev}x-#{$size}#{$infix} {
           #{$prop}-right: #{$size}#{$spacers_unit} !important;
         }
-        .#{$prefix}#{$infix}#{$abbrev}b-#{$size},
-        .#{$prefix}#{$infix}#{$abbrev}y-#{$size} {
+        .#{$prefix}#{$abbrev}b-#{$size}#{$infix},
+        .#{$prefix}#{$abbrev}y-#{$size}#{$infix} {
           #{$prop}-bottom: #{$size}#{$spacers_unit} !important;
         }
-        .#{$prefix}#{$infix}#{$abbrev}l-#{$size},
-        .#{$prefix}#{$infix}#{$abbrev}x-#{$size} {
+        .#{$prefix}#{$abbrev}l-#{$size}#{$infix},
+        .#{$prefix}#{$abbrev}x-#{$size}#{$infix} {
           #{$prop}-left: #{$size}#{$spacers_unit} !important;
         }
       }
     }
 
     // Some special margin utils
-    .#{$prefix}#{$infix}m-auto {
+    .#{$prefix}m-auto #{$infix} {
       margin: auto !important;
     }
-    .#{$prefix}#{$infix}mt-auto,
-    .#{$prefix}#{$infix}my-auto {
+    .#{$prefix}mt-auto#{$infix},
+    .#{$prefix}my-auto#{$infix} {
       margin-top: auto !important;
     }
-    .#{$prefix}#{$infix}mr-auto,
-    .#{$prefix}#{$infix}mx-auto {
+    .#{$prefix}mr-auto#{$infix},
+    .#{$prefix}mx-auto#{$infix} {
       margin-right: auto !important;
     }
-    .#{$prefix}#{$infix}mb-auto,
-    .#{$prefix}#{$infix}my-auto {
+    .#{$prefix}mb-auto#{$infix},
+    .#{$prefix}my-auto#{$infix} {
       margin-bottom: auto !important;
     }
-    .#{$prefix}#{$infix}ml-auto,
-    .#{$prefix}#{$infix}mx-auto {
+    .#{$prefix}ml-auto#{$infix},
+    .#{$prefix}mx-auto#{$infix} {
+      margin-left: auto !important;
+    }
+  }
+}
+@each $breakpoint in map-keys($grid-breakpoints-only) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (margin: m, padding: p) {
+      @each $size in $spacers {
+        .#{$prefix}#{$abbrev}-#{$size}#{$infix} {
+          #{$prop}: #{$size}#{$spacers_unit} !important;
+        }
+        .#{$prefix}#{$abbrev}t-#{$size}#{$infix},
+        .#{$prefix}#{$abbrev}y-#{$size}#{$infix} {
+          #{$prop}-top: #{$size}#{$spacers_unit} !important;
+        }
+        .#{$prefix}#{$abbrev}r-#{$size}#{$infix},
+        .#{$prefix}#{$abbrev}x-#{$size}#{$infix} {
+          #{$prop}-right: #{$size}#{$spacers_unit} !important;
+        }
+        .#{$prefix}#{$abbrev}b-#{$size}#{$infix},
+        .#{$prefix}#{$abbrev}y-#{$size}#{$infix} {
+          #{$prop}-bottom: #{$size}#{$spacers_unit} !important;
+        }
+        .#{$prefix}#{$abbrev}l-#{$size}#{$infix},
+        .#{$prefix}#{$abbrev}x-#{$size}#{$infix} {
+          #{$prop}-left: #{$size}#{$spacers_unit} !important;
+        }
+      }
+    }
+
+    // Some special margin utils
+    .#{$prefix}m-auto #{$infix} {
+      margin: auto !important;
+    }
+    .#{$prefix}mt-auto#{$infix},
+    .#{$prefix}my-auto#{$infix} {
+      margin-top: auto !important;
+    }
+    .#{$prefix}mr-auto#{$infix},
+    .#{$prefix}mx-auto#{$infix} {
+      margin-right: auto !important;
+    }
+    .#{$prefix}mb-auto#{$infix},
+    .#{$prefix}my-auto#{$infix} {
+      margin-bottom: auto !important;
+    }
+    .#{$prefix}ml-auto#{$infix},
+    .#{$prefix}mx-auto#{$infix} {
       margin-left: auto !important;
     }
   }
