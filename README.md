@@ -1,4 +1,4 @@
-# ageem.css 💗  
+# em.css 💗  
 
 Stylish, modern, compact and powerful front-end library for faster and easier web development.
 
@@ -33,12 +33,9 @@ add fix some bugs 🙏😩
 
 ------
 
-### usage
-
-------
 
 
-### 🏁 Quick start
+### 🏁 Getting started
 
 Several quick start options are available:
 
@@ -79,3 +76,11 @@ you must install v10 of nodejs or if you installed nodejs v12 switch to v10 like
 
 
 each time you see error `const { Math, Object } = primordials;` or something like that you need set Node.js default version to 10.16.0
+
+------
+
+
+
+### Conterbuting
+
+Finding bugs and add features, sending pull requests or improving our document - any kind of contribution is welcome and highly appreciated. To get started, first read our [contribution guidelines](https://github.com/uikit/uikit/blob/develop/CONTRIBUTING.md). Thanks! 🙏
