@@ -1,14 +1,41 @@
-#em.css
+# em.css 💗  
 
-em.css came about after I got tired of writing CSS. All of the CSS in the world has already been written, and there's no need to rewrite it in every one of our projects.we came up with a naming scheme we were satisfied with, and em.css was born.
-Stylish, modern, compact and powerful front-end library for faster and easier web development. 
+Stylish, modern, compact and powerful front-end library for faster and easier web development.
 
-completely responsive base on bootstrap v4 grid system
+
+
+**em.css** came about after I got tired of writing CSS. then i figure out i must write base library that worked with bootstrap sizes , in this library we gather common property that use a lot.
+
+
+completely responsive base on bootstrap v4 grid system 🤩
 
 <br>
-<br>
 
-### Quick start
+------
+
+### 🚀🚀🚀 version 2 is released 🔥🔥
+
+
+
+#### release note
+
+1. make all class shorter 😍
+2. change prefix from "em-" to "-" 🤞🤞
+3. add primary, secondary, danger, success, warning, light, dark 💅
+4. add align-self 👏😉
+5. add background-attachment, background-repeat, object-fit, object-position 🤩
+6. add resize 🧐
+7. add border style 🤤
+8. add RFS (responsive font size)  🤙😎
+9. add "between" for working one class in between two size 🖖😈
+
+add fix some bugs 🙏😩
+
+------
+
+
+
+### 🏁 Getting started
 
 Several quick start options are available:
 
@@ -50,3 +77,10 @@ you must install v10 of nodejs or if you installed nodejs v12 switch to v10 like
 
 each time you see error `const { Math, Object } = primordials;` or something like that you need set Node.js default version to 10.16.0
 
+------
+
+
+
+### Conterbuting
+
+Finding bugs and add features, sending pull requests or improving our document - any kind of contribution is welcome and highly appreciated. To get started, first read our [contribution guidelines](https://github.com/uikit/uikit/blob/develop/CONTRIBUTING.md). Thanks! 🙏
