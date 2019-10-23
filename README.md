@@ -11,8 +11,6 @@ completely responsive base on bootstrap v4 grid system 🤩
 
 <br>
 
-------
-
 ## 🚀🚀 version 2 is released 🔥
 
 
