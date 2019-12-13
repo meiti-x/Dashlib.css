@@ -1,10 +1,10 @@
-# Dasherry
+# Dashlib
 
 > Stylish, modern, compact and powerful front-end library for faster and easier web development.
 
 see documention >>
 
-Dasherry came about after I got tired of writing CSS. then i figure out i must write base library that worked with bootstrap sizes , in this library we gather common property that use a lot.
+Dashlib came about after I got tired of writing CSS. then i figure out i must write base library that worked with bootstrap sizes , in this library we gather common property that use a lot.
 
 completely responsive base on bootstrap v4 grid system 🤩
 
