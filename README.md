@@ -21,7 +21,11 @@ completely responsive base on bootstrap v4 grid system 🤩
 - [License](https://github.com/twbs/bootstrap#copyright-and-license)
 
 
+<<<<<<< HEAD
 
+=======
+## 🚀🚀 version 2 is released 🔥
+>>>>>>> 4b3e04049e259c3b5e8d2dbfab96c0efb40410dc
 
 
 ##  release notes 🚀
@@ -144,4 +148,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+
+Finding bugs and add features, sending pull requests or improving our document - any kind of contribution is welcome and highly appreciated. To get started, first read our [contribution guidelines](https://github.com/uikit/uikit/blob/develop/CONTRIBUTING.md). Thanks! 🙏
 
