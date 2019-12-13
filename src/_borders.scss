@@ -26,7 +26,7 @@
 //
 // border-style
 //
-@each $prop, $abbrev in (border-style: b) {
+@each $prop, $abbrev in (border-style: bs) {
   @each $kind, $value in $border_styles {
     .#{$prefix}#{$abbrev}-#{$kind} {
       #{$prop}: #{$value} !important;

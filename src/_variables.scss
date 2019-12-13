@@ -60,12 +60,12 @@ $borders: ();
   $borders_from: $borders_from + $borders_step;
 }
 
-$border_styles: (non:none, dash:dashed, dot:dotted, hid:hidden, soli:solid);
+$border_styles: (none:none, dash:dashed, dot:dotted, hide:hidden, solid:solid);
 
 //
 // display
 //
-$displays: (none:none, inline:in, inline-block:in-bloc, block:bloc, table:table, table-row:table-r, table-cell:table-cel, flex:flx, inline-flex:in-flx);
+$displays: (none:none, inline:in, inline-block:in-bloc, block:block, table:tbl, table-row:tbl-r, table-cell:tbl-cel, flex:flex, inline-flex:in-flex);
 
 //
 // align
@@ -85,7 +85,7 @@ $font_style: (nor:normal, ita:italic, obl:oblique);
 //
 // text-decoration
 //
-$text_decorations: (non:none, under:underline, l-thro:line-through);
+$text_decorations: (none:none, under-l:underline, l-thro:line-through);
 
 //
 // direction
@@ -125,12 +125,12 @@ $fonts: ();
 //
 // text-align
 //
-$text-aligns: (r:right, cen:center, l:left, just:justify);
+$text-aligns: (r:right, c:center, l:left, just:justify);
 
 //
 // position
 //
-$positions: (stat:static, rel:relative, abs:absolute, fix:fixed, stic:sticky);
+$positions: (stat:static, rel:relative, abs:absolute, fix:fixed, stick:sticky);
 
 //
 // z-index
@@ -169,12 +169,12 @@ $floats: (none:none, r:right, l:left);
 //
 // overflow
 //
-$overflows: (vis:visible, hid:hidden, scro:scroll, auto:auto);
+$overflows: (vis:visible, hide:hidden, scroll:scroll, auto:auto);
 
 //
 // cursor
 //
-$cursors: (unset:unset, def:default, poin:pointer, txt:text, non:none, cross:crosshair, not-alow:not-allowed, mov:move, wait:wait
+$cursors: (unset:unset, def:default, pointer:pointer, text:text, none:none, cross:crosshair, not-allow:not-allowed, move:move, wait:wait
 );
 
 //
@@ -195,16 +195,19 @@ $colors: (white: #FFF, gray-50: #FAFAFA, gray-100:#F5F5F5, gray-200:#EEEEEE, gra
   @each $name, $color in $colors {
     --#{$name}: #{$color};
   }
+  @each $name, $value in $grid-breakpoints {
+    --breakpoint-#{$name}: #{$value};
+  }
 }
 
 //
 // display flex options
 //
-$flex-wrap: (w-n:nowrap, w:wrap, w-r:wrap-reverse);
+$flex-wrap: (wrap-n:nowrap, wrap:wrap, wrap-r:wrap-reverse);
 $flex-direction: (r:row, rr:row-reverse, c:column, cr:column-reverse);
-$align-items: (start:flex-start, end:flex-end, cent: center, base-l:baseline, stre:stretch);
-$align-self: (start:flex-start, end:flex-end, cent: center, base-l:baseline, stre:stretch, auto:auto);
-$justify-content: (start:flex-start, end:flex-end, cent:center, space-bet:space-between, space-around:space-around, space-eve:space-evenly);
+$align-items: (start:flex-start, end:flex-end, c: center, base-l:baseline, stre:stretch);
+$align-self: (start:flex-start, end:flex-end, c: center, base-l:baseline, stre:stretch, auto:auto);
+$justify-content: (start:flex-start, end:flex-end, c:center, sp-bet:space-between, sp-around:space-around, sp-eve:space-evenly);
 $order: (1, 2, 3, 4, 5);
 
 
@@ -212,14 +215,14 @@ $order: (1, 2, 3, 4, 5);
 // background options
 //
 $background-position: (t:top, r:right, l:left, b:bottom, tr:top right, tl:top left, bl:bottom left, br:bottom right, c:center);
-$background-size: (cov:cover, con:contain, auto:auto);
+$background-size: (cover:cover, contain:contain, auto:auto);
 $background-repeat: (rep:repeat, rep-n:no-repeat);
-$background-attachment: (fix:fix, scro:scroll, loc:local);
-$object-fit: (cov:cover, con:contain, fil:fill);
+$background-attachment: (fix:fix, scroll:scroll, local:local);
+$object-fit: (cover:cover, contain:contain, fill:fill);
 $object-position: (t:top, r:right, l:left, b:bottom, tr:top right, tl:top left, bl:bottom left, br:bottom right, c:center);
 
 
 //
 // resize
 //
-$resize: (non:none, both:both, hor:horizontal, ver:vertical);
+$resize: (none:none, both:both, hor:horizontal, ver:vertical);

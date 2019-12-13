@@ -1,8 +1,8 @@
 {
-  "name": "em.css",
+  "name": "dashlib.css",
   "version": "2",
   "description": "Stylish, modern, compact and powerful front-end library for faster and easier web development.",
-  "main": "em.css",
+  "main": "dashlib.css",
   "dependencies": {
     "atob": "^2.1.2",
     "autoprefixer": "^8.2.0",

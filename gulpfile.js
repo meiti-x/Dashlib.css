@@ -14,7 +14,7 @@ const rename = require('gulp-rename');
 
 // variables
 let paths = {
-    srcStyle: "src/em.scss",
+    srcStyle: "src/dashlib.scss",
     srcFont: "src/fonts/*/*.*",
     distStyle: "dist",
     distFont: "dist/fonts",
@@ -40,13 +40,5 @@ gulp.task('style', function () {
         .pipe(gulp.dest(paths.distStyle));
 });
 
-gulp.task('font', function () {
-    let fonts = gulp.src(paths.srcFont);
-
-
-    return mergeStream(fonts)
-        .pipe(gulp.dest(paths.distFont));
-});
-
 // Default
-gulp.task('default', ['style','font']);
+gulp.task('default', ['style']);
