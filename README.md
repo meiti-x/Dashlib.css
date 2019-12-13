@@ -21,11 +21,8 @@ completely responsive base on bootstrap v4 grid system 🤩
 - [License](https://github.com/twbs/bootstrap#copyright-and-license)
 
 
-<<<<<<< HEAD
-
-=======
 ## 🚀🚀 version 2 is released 🔥
->>>>>>> 4b3e04049e259c3b5e8d2dbfab96c0efb40410dc
+
 
 
 ##  release notes 🚀
