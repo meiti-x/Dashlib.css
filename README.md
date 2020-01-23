@@ -73,8 +73,8 @@ Have a bug or a feature request? If your problem or idea is not addressed yet, [
 Finding bugs and add features, sending pull requests or improving our document - any kind of contribution is welcome and highly appreciated. Thanks! 🙏
 
 
-we have to do list you can choose one of them and start collabarting.
-1. Upgrade to last version of gulp
+We have to do list you can choose one of them and start collabarting. :)
+1. Upgrade to last version of gulp 
 2. Complete Documents.
 
 
@@ -83,7 +83,7 @@ we have to do list you can choose one of them and start collabarting.
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+5. Create a new Pull Request.
 
 ## Development
 
