@@ -77,7 +77,7 @@ we have to do list you can choose one of them and start collabarting.
 1. Upgrade to last version of gulp
 
 
-** Contributing Steps**
+**Contributing Steps**
 1. Fork it (<https://github.com/mahdi-momeni/Dashlib.css/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
