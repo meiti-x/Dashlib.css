@@ -10,6 +10,7 @@ Dashlib is a great utility library that helps you take ready-made and responsive
 > Stylish, modern, compact and powerful front-end library for faster and easier web development.
 
 
+**[Read The docs](https://mahdi-momeni.github.io/Dashlib.css/)**
 
 
 
