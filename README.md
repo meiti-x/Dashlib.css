@@ -1,4 +1,6 @@
 ## Introduction
+https://img.shields.io/github/repo-size/mahdi-momeni/Dashlib.css
+
 
 **Dashlib**  was born when we realized that we were spending a lot of time writing CSS in the CSS file, which was getting bigger and bigger with the CSS file. This led us to the idea of building a library called **Dashlib**
 
