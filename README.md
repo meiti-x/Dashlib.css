@@ -1,5 +1,5 @@
 ## Introduction
-![GitHub repo size](https://img.shields.io/github/repo-size/mahdi-momeni/Dashlib.css) ![GitHub top language](https://img.shields.io/github/languages/top/mahdi-momeni/Dashlib.css) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/mahdi-momeni/Dashlib.css/master)
+![npm](https://img.shields.io/npm/v/dashlib.css) ![GitHub repo size](https://img.shields.io/github/repo-size/mahdi-momeni/Dashlib.css) ![GitHub top language](https://img.shields.io/github/languages/top/mahdi-momeni/Dashlib.css) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/mahdi-momeni/Dashlib.css/master)
 
 **Dashlib**  was born when we realized that we were spending a lot of time writing CSS in the CSS file, which was getting bigger and bigger with the CSS file. This led us to the idea of building a library called **Dashlib**
 
