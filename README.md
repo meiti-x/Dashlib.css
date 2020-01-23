@@ -75,6 +75,7 @@ Finding bugs and add features, sending pull requests or improving our document -
 
 we have to do list you can choose one of them and start collabarting.
 1. Upgrade to last version of gulp
+2. Complete Documents.
 
 
 **Contributing Steps**
