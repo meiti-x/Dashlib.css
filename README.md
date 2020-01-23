@@ -16,22 +16,22 @@ Dashlib is a great utility library that helps you take ready-made and responsive
 ## release notes 
 **version 2 is released** 
 
-1. make all class shorter
-2. change prefix from "em-" to "-" 
-3. add primary, secondary, danger, success, warning, light, dark 
-4. add align-self 
+1. make all class shorter 🙄😘
+2. change prefix from "em-" to "-"  🙄
+3. add primary, secondary, danger, success, warning, light, dark 💅
+4. add align-self 🤙🤞
 5. add background-attachment, background-repeat, object-fit, object-position 🤩
 6. add resize 🧐
-7. add border style 
-8. add RFS (responsive font size) 
-9. add "between" for working one class in between two size 
+7. add border style 🤓
+8. add RFS (responsive font size) 💋😉
+9. add "between" for working one class in between two size 🤔😦😮
 
 fix some bugs 
 
 
 ## Download
 
-There are many ways to install Foundation, but if you're just getting started, we have a few suggestions.
+There are many ways to install Dashlib, but if you're just getting started, we have a few suggestions.
 
 ### Install with Package Managers
 
