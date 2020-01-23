@@ -14,7 +14,7 @@ Dashlib is a great utility library that helps you take ready-made and responsive
 
 
 
-## release notes 
+## Release notes 
 **version 2 is released** 
 
 1. make all class shorter 🙄😘
