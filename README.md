@@ -65,7 +65,7 @@ Here's what comes in the package.
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
+Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/mahdi-momeni/Dashlib.css/issues/new). Thanks! 🙏
 
 
 ## Contributing
