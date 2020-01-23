@@ -10,7 +10,7 @@ Dashlib is a great utility library that helps you take ready-made and responsive
 > Stylish, modern, compact and powerful front-end library for faster and easier web development.
 
 
-**[Read The docs](https://mahdi-momeni.github.io/Dashlib.css/)**
+   **[Read The docs](https://mahdi-momeni.github.io/Dashlib.css/)**
 
 
 
@@ -68,7 +68,7 @@ Have a bug or a feature request? If your problem or idea is not addressed yet, [
 
 ## Contributing
 
-Finding bugs and add features, sending pull requests or improving our document - any kind of contribution is welcome and highly appreciated. Thanks! ![pray](https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png)
+Finding bugs and add features, sending pull requests or improving our document - any kind of contribution is welcome and highly appreciated. Thanks! 🙏
 
 1. Fork it (<https://github.com/mahdi-momeni/Dashlib.css/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
