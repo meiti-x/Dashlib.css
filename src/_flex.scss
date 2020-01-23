@@ -14,16 +14,16 @@
     }
 
     //flex-wrap
-    @each $prop, $abbrev in (flex-wrap: flx-w) {
+    @each $prop, $abbrev in (flex-wrap: flex-w) {
       @each $type, $value in $flex-wrap {
-        .#{$prefix}flx-#{$type}#{$infix} {
+        .#{$prefix}flex-#{$type}#{$infix} {
           #{$prop}: #{$value} !important;
         }
       }
     }
 
     //flex-direction
-    @each $prop, $abbrev in (flex-direction: flx-d) {
+    @each $prop, $abbrev in (flex-direction: flex-d) {
       @each $type, $value in $flex-direction {
         .#{$prefix}#{$abbrev}-#{$type}#{$infix} {
           #{$prop}: #{$value} !important;
@@ -59,7 +59,7 @@
     }
 
     //for filling parent
-    .#{$prefix}flx-fil#{$infix} {
+    .#{$prefix}flex-fil#{$infix} {
       -ms-flex: 1 1 auto !important;
       flex: 1 1 auto !important;
     }
@@ -82,16 +82,16 @@
     }
 
     //flex-wrap
-    @each $prop, $abbrev in (flex-wrap: flx-w) {
+    @each $prop, $abbrev in (flex-wrap: flex-w) {
       @each $type, $value in $flex-wrap {
-        .#{$prefix}flx-#{$type}_o#{$infix} {
+        .#{$prefix}flex-#{$type}_o#{$infix} {
           #{$prop}: #{$value} !important;
         }
       }
     }
 
     //flex-direction
-    @each $prop, $abbrev in (flex-direction: flx-d) {
+    @each $prop, $abbrev in (flex-direction: flex-d) {
       @each $type, $value in $flex-direction {
         .#{$prefix}#{$abbrev}-#{$type}_o#{$infix} {
           #{$prop}: #{$value} !important;
@@ -127,7 +127,7 @@
     }
 
     //for filling parent
-    .#{$prefix}flx-fil_o#{$infix} {
+    .#{$prefix}flex-fil_o#{$infix} {
       -ms-flex: 1 1 auto !important;
       flex: 1 1 auto !important;
     }

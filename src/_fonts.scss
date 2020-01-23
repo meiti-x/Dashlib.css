@@ -13,24 +13,26 @@
     }
 
     // text-align
-    @each $prop, $abbrev in (text-align: txt) {
+    @each $prop, $abbrev in (text-align: text) {
       @each $kind, $value in $text-aligns {
         .#{$prefix}#{$abbrev}-#{$kind}#{$infix} {
           #{$prop}: #{$value} !important;
         }
       }
     }
-  }
-}
 
-//line height
-@each $prop, $abbrev in (line-height: lh) {
-  @each $size in $line_heights {
-    .#{$prefix}#{$abbrev}-#{$size} {
-      #{$prop}: #{$size}#{$line_height_unit} !important;
+
+    //line height
+    @each $prop, $abbrev in (line-height: lh) {
+      @each $size in $line_heights {
+        .#{$prefix}#{$abbrev}-#{$size}#{$infix} {
+          #{$prop}: #{$size}#{$line_height_unit} !important;
+        }
+      }
     }
   }
 }
+
 
 // font-weight
 @each $prop, $abbrev in (font-weight: font-w) {
