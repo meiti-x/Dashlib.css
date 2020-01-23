@@ -49,9 +49,8 @@ There are many ways to install Foundation, but if you're just getting started, w
 
 **NPM**
 ```javascript
-npm install foundation-sites
+npm install dashlib
 ```
-
 
 
 ### Direct download link
