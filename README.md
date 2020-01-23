@@ -13,28 +13,20 @@ Dashlib is a great utility library that helps you take ready-made and responsive
 
 
 
-## Table Of contents
-
-[TOC]
-
-
-
-## release notes ![rocket](https://github.githubassets.com/images/icons/emoji/unicode/1f680.png)
-
-**version 2 is released** ![fire](https://github.githubassets.com/images/icons/emoji/unicode/1f525.png)
+## release notes 
+**version 2 is released** 
 
 1. make all class shorter
-2. change prefix from "em-" to "-" ![crossed_fingers](https://github.githubassets.com/images/icons/emoji/unicode/1f91e.png)![crossed_fingers](https://github.githubassets.com/images/icons/emoji/unicode/1f91e.png)
-3. add primary, secondary, danger, success, warning, light, dark ![nail_care](https://github.githubassets.com/images/icons/emoji/unicode/1f485.png)
-4. add align-self ![clap](https://github.githubassets.com/images/icons/emoji/unicode/1f44f.png)![wink](https://github.githubassets.com/images/icons/emoji/unicode/1f609.png)
+2. change prefix from "em-" to "-" 
+3. add primary, secondary, danger, success, warning, light, dark 
+4. add align-self 
 5. add background-attachment, background-repeat, object-fit, object-position 🤩
 6. add resize 🧐
-7. add border style ![drooling_face](https://github.githubassets.com/images/icons/emoji/unicode/1f924.png)
-8. add RFS (responsive font size) ![call_me_hand](https://github.githubassets.com/images/icons/emoji/unicode/1f919.png)![sunglasses](https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png)
-9. add "between" for working one class in between two size ![vulcan_salute](https://github.githubassets.com/images/icons/emoji/unicode/1f596.png)![smiling_imp](https://github.githubassets.com/images/icons/emoji/unicode/1f608.png)
+7. add border style 
+8. add RFS (responsive font size) 
+9. add "between" for working one class in between two size 
 
-fix some bugs ![pray](https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png)![weary](https://github.githubassets.com/images/icons/emoji/unicode/1f629.png)
-
+fix some bugs 
 
 
 ## Download
