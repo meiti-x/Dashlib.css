@@ -1,4 +1,5 @@
 ## Introduction
+![npm](https://img.shields.io/npm/v/dashlib.css) ![GitHub repo size](https://img.shields.io/github/repo-size/mahdi-momeni/Dashlib.css) ![GitHub top language](https://img.shields.io/github/languages/top/mahdi-momeni/Dashlib.css) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/mahdi-momeni/Dashlib.css/master)
 
 **Dashlib**  was born when we realized that we were spending a lot of time writing CSS in the CSS file, which was getting bigger and bigger with the CSS file. This led us to the idea of building a library called **Dashlib**
 
@@ -64,17 +65,25 @@ Here's what comes in the package.
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
+Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/mahdi-momeni/Dashlib.css/issues/new). Thanks! 🙏
+
 
 ## Contributing
 
 Finding bugs and add features, sending pull requests or improving our document - any kind of contribution is welcome and highly appreciated. Thanks! 🙏
 
+
+We have to do list you can choose one of them and start collabarting. :)
+1. Upgrade to last version of gulp 
+2. Complete Documents.
+
+
+**Contributing Steps**
 1. Fork it (<https://github.com/mahdi-momeni/Dashlib.css/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+5. Create a new Pull Request.
 
 ## Development
 
