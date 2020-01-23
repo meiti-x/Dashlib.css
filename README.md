@@ -314,7 +314,7 @@ sizes are 0 to 60 with 5 step and special size :
 
 #### Horizontal and vertical centering
 
-Additionally, Dasherry also includes an `.-mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal or vertical margins to `auto`.
+Additionally, Dashlib also includes an `.-mx-auto` class for horizontally centering fixed-width block level content—that is, content that has `display: block` and a `width` set—by setting the horizontal or vertical margins to `auto`.
 
 
 
@@ -343,7 +343,7 @@ Add one or more of the following classes to any element to create the same verti
 
 #### Responsive
 
-Dasherry provides a number of responsive classes. they have suffixes that represent the breakpoint from which they come to effect.
+Dashlib provides a number of responsive classes. they have suffixes that represent the breakpoint from which they come to effect.
 
 | EXAMPLES                                 | DESCRIPTION                                  |
 | ---------------------------------------- | -------------------------------------------- |
@@ -418,13 +418,13 @@ Have a bug or a feature request? If your problem or idea is not addressed yet, [
 
 Finding bugs and add features, sending pull requests or improving our document - any kind of contribution is welcome and highly appreciated. To get started, first read our [contribution guidelines](https://github.com/uikit/uikit/blob/develop/CONTRIBUTING.md). Thanks! ![pray](https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png)
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
+1. Fork it (<https://github.com/mahdi-momeni/Dashlib.css/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
-## Deployment
+## Development
 
 **for run gulp v3.9.1 tasks you should use or install node v10**
 
@@ -454,6 +454,6 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-- **Mahdi Momeni** - [Dashery](https://github.com/PurpleBooth)
+- **Mahdi Momeni** - [Dashlib](https://github.com/mahdi-momeni/)
 
-Special thanks from Ehsan Ahmadi. See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Special thanks from Ehsan Ahmadi. See also the list of [contributors](https://github.com/mahdi-momeni/Dashlib.css/graphs/contributors) who participated in this project.
