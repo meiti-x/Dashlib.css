@@ -67,14 +67,17 @@ Here's what comes in the package.
 
 Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
 
-we have to do list you can choose one of them and start collabarting.
-
-1. Upgrade to last version of gulp
 
 ## Contributing
 
 Finding bugs and add features, sending pull requests or improving our document - any kind of contribution is welcome and highly appreciated. Thanks! 🙏
 
+
+we have to do list you can choose one of them and start collabarting.
+1. Upgrade to last version of gulp
+
+
+** Contributing Steps**
 1. Fork it (<https://github.com/mahdi-momeni/Dashlib.css/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
