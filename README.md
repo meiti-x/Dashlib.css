@@ -77,6 +77,7 @@ We have to do list you can choose one of them and start collabarting. :)
 1. Upgrade to last version of gulp 
 2. Complete Documents.
 3. replace px unit with rem in font-size
+4. Fix position cover in old browser
 
 
 **Contributing Steps**
