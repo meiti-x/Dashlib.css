@@ -13,20 +13,12 @@ Dashlib is a great utility library that helps you take ready-made and responsive
 
 
 
-## release notes 
-**version 2 is released** 
+## Release notes 
+**version 2.0.3 is released** 
 
-1. make all class shorter 🙄😘
-2. change prefix from "em-" to "-"  🙄
-3. add primary, secondary, danger, success, warning, light, dark 💅
-4. add align-self 🤙🤞
-5. add background-attachment, background-repeat, object-fit, object-position 🤩
-6. add resize 🧐
-7. add border style 🤓
-8. add RFS (responsive font size) 💋😉
-9. add "between" for working one class in between two size 🤔😦😮
+1. change fonts unit to rem (BOOM!)
 
-fix some bugs 
+and add some more bug to fix it later
 
 
 ## Download
@@ -121,6 +113,11 @@ Bootstrap primarily uses the following media query ranges—or breakpoints—in 
 
 **Dashlib** includes a number of responsive classes to style your content for different viewport widths. This section gives you an overview of the available breakpoints and the associated devices.
 
+
+most of properties in this library have responsive support because of that we dont describe how responsive
+one property because all of them follow this rule.
+
+
 the classes are named using the format:
 
 - `.-{property}-{value}_{breakpoint}`  for `sm`, `md`, `lg`, and `xl`.
@@ -155,8 +152,6 @@ there is NO media query for `xs ` in new version of bootstrap. if you want write
     Cool responsive margin
 </div>
 ```
-
-
 
 #### Between breakpoints
 
@@ -366,8 +361,8 @@ Display utility classes that apply to all [breakpoints](https://getbootstrap.com
 
 As such, the classes are named using the format:
 
-- `.d-{value}` for `xs`
-- `.d-{value}_{breakpoint}` for `sm`, `md`, `lg`, and `xl`.
+- `.-d-{value}` for `xs`
+- `.-d-{value}_{breakpoint}` for `sm`, `md`, `lg`, and `xl`.
 
 Where *value* is one of:
 
@@ -387,7 +382,7 @@ Where *value* is one of:
 
 ### Text Align
 
-- `.text-{value}` 
+- `.-text-{value}` 
 
 Where *value* is one of:
 
@@ -398,6 +393,65 @@ Where *value* is one of:
 - `c` for `center`
 
 - `just` for `justify`
+
+
+### float
+
+- `.-float-{value}` 
+
+Where *value* is one of:
+
+- `r` for`right`
+
+- `l` for `left`
+
+- `none` for `none`
+
+
+
+### shadow
+
+- `.-bg-shad-{value}`  for box shadow
+- `.-txt-shad-{value}` for text shadow
+
+Where *value* can be number from 0 to 5
+
+
+
+
+### overflow
+
+- `.-of-{value}` 
+
+Where *value* can be :
+
+- `hide` for`hidden`
+
+- `vis` for `visible`
+
+- `scroll` for `scroll`
+
+- `auto` for `auto`
+
+
+
+### vertical align
+
+- `.-v-align{value}` 
+
+Where *value* can be :
+
+- `base-l` for`baseline`
+
+- `-t` for `top`
+
+- `-m` for `middle`
+
+- `-b` for `bottom`
+
+- `-txt-b` for `text-bottom`
+
+
 
   
 
