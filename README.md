@@ -18,7 +18,7 @@ Dashlib is a great utility library that helps you take ready-made and responsive
 ## Release notes 
 **version 2.0.3 is released** 
 
-1. change fonts unit to rem (BOOM!)
+1. change font units to rem (BOOM!)
 
 and add some more bug to fix it later
 
