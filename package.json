@@ -1,11 +1,23 @@
 {
   "name": "dashlib.css",
-  "version": "2",
+  "version": "2.0.2",
   "description": "Stylish, modern, compact and powerful front-end library for faster and easier web development.",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "https://mahdi-momeni.github.io/Dashlib.css/",
+  "author": "Mahdi Momeni (https://github.com/mahdi-momeni/Dashlib.css/graphs/contributors)",
   "main": "dashlib.css",
   "dependencies": {
     "atob": "^2.1.2",
     "autoprefixer": "^8.2.0",
+    "bootstrap": "^4.4.1",
     "browser-sync": "^2.23.6",
     "cryptiles": "^4.1.2",
     "deep-extend": "^0.6.0",
@@ -27,6 +39,7 @@
     "randomatic": "^3.1.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.1"
   }
 }

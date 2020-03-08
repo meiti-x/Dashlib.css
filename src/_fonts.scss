@@ -1,13 +1,18 @@
 // font-weight, text-decoration, direction, line-height, ellipsis, font and text-align
+html {
+  font-size: 62.5%; // 10px
+}
+
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
     // font
     @each $prop, $abbrev in (font-size: font) {
       @each $size in $fonts {
-        .#{$prefix}#{$abbrev}-#{$size}#{$infix} {
-          #{$prop}: #{$size}#{$fonts_unit} !important;
+        @for $i from 0 through 9 {
+          .#{$prefix}#{$abbrev}-#{$size}#{$i}#{$infix} {
+            #{$prop}: #{$size}#{'.'}#{$i}#{$fonts_unit} !important;
+          }
         }
       }
     }

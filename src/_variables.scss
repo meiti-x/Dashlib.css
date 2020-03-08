@@ -110,10 +110,10 @@ $line_heights: ();
 //
 // font
 //
-$fonts_from: 0;
-$fonts_to: 60;
+$fonts_from: 1;
+$fonts_to: 5;
 $fonts_step: 1;
-$fonts_unit: px;
+$fonts_unit: rem;
 
 $fonts: ();
 @while $fonts_from <= $fonts_to {
