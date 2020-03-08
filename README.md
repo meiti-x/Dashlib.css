@@ -1,6 +1,9 @@
 ## Introduction
 ![npm](https://img.shields.io/npm/v/dashlib.css) ![GitHub repo size](https://img.shields.io/github/repo-size/mahdi-momeni/Dashlib.css) ![GitHub top language](https://img.shields.io/github/languages/top/mahdi-momeni/Dashlib.css) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/mahdi-momeni/Dashlib.css/master)
 
+![dashlib logo](https://repository-images.githubusercontent.com/151942886/e5e98180-6168-11ea-854a-378a4879e38f)
+
+
 **Dashlib**  was born when we realized that we were spending a lot of time writing CSS in the CSS file, which was getting bigger and bigger with the CSS file. This led us to the idea of building a library called **Dashlib**
 
 Dashlib is a great utility library that helps you take ready-made and responsive classes.
