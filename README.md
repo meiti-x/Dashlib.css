@@ -113,4 +113,4 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 - **Mahdi Momeni** - [Dashlib](https://github.com/mahdi-momeni/)
 - also me! :)
 
-Special thanks from Ehsan Ahmadi. See also the list of [contributors](https://github.com/mahdi-momeni/Dashlib.css/graphs/contributors) who participated in this project.
+Special thanks to Ehsan Ahmadi. See also the list of [contributors](https://github.com/mahdi-momeni/Dashlib.css/graphs/contributors) who participated in this project.
