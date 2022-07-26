@@ -106,7 +106,7 @@ each time you see error `const { Math, Object } = primordials;` or something lik
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). Sometimes we mishandle , but we adhere to those rules whenever possible.
+We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
